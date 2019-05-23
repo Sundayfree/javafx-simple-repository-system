@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0"
+            prefWidth="755.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.SearchTableControl">
+    <content>
+        <TableView fx:id="tableView" prefHeight="474.0" prefWidth="753.0">
+            <columns>
+                <TableColumn fx:id="productID" prefWidth="75.0" text="ID"/>
+                <TableColumn fx:id="productName" prefWidth="75.0" text="Name"/>
+                <TableColumn fx:id="importDate" prefWidth="201.0" text="Date"/>
+                <TableColumn fx:id="quantity" minWidth="6.0" prefWidth="84.0" text="Quantity"/>
+                <TableColumn fx:id="supplierID" minWidth="4.0" prefWidth="118.0" text="SupplierID"/>
+                <TableColumn fx:id="sellingPrice" prefWidth="108.0" text="Retail Price"/>
+                <TableColumn fx:id="costPrice" prefWidth="91.0" text="Cost"/>
+            </columns>
+        </TableView>
+    </content>
+</ScrollPane>

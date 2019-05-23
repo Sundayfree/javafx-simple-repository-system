@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="377.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.ListSupplierControl">
+    <children>
+        <TableView fx:id="tableView" fixedCellSize="0.0" prefHeight="337.0" prefWidth="720.0"
+                   AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0"
+                   AnchorPane.topAnchor="1.0">
+            <columns>
+                <TableColumn fx:id="supplierID" prefWidth="119.0" text="supplierID"/>
+                <TableColumn fx:id="supplierName" prefWidth="217.0" text="supplier Name"/>
+                <TableColumn fx:id="phoneNum" prefWidth="223.0" text="phone Number"/>
+                <TableColumn fx:id="productName" prefWidth="131.0" text="product Name"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

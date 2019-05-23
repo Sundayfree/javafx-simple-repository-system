@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+encoding//src/dao/ProductDao.java=UTF-8
+encoding//src/dao/impl/ProductDaoImpl.java=UTF-8
+encoding//src/utils/DaoFactory.java=UTF-8

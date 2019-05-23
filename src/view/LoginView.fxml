@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="560.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.LoginControl">
+    <children>
+        <MenuBar prefHeight="40.0" prefWidth="946.0" AnchorPane.bottomAnchor="534.0" AnchorPane.leftAnchor="1.0"
+                 AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Display">
+                    <items>
+                        <MenuItem fx:id="showUser" mnemonicParsing="false" onAction="#showUser" text="Open"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Register">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#showRegisterForm" text="Open"/>
+                    </items>
+                </Menu>
+            </menus>
+            <padding>
+                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0"/>
+            </padding>
+        </MenuBar>
+        <Label layoutX="188.0" layoutY="98.0" prefHeight="86.0" prefWidth="588.0" text="Inventory Managment System">
+            <font>
+                <Font name="MV Boli" size="40.0"/>
+            </font>
+        </Label>
+        <Pane layoutX="-7.0" layoutY="226.0" prefHeight="350.0" prefWidth="946.0" AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="-7.0">
+            <children>
+                <GridPane alignment="TOP_RIGHT" layoutX="270.0" layoutY="70.0" prefHeight="113.0" prefWidth="350.0">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="249.0" minWidth="10.0"
+                                           prefWidth="75.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="410.0" minWidth="10.0" prefWidth="195.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="105.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label contentDisplay="RIGHT" text="User Name:">
+                            <font>
+                                <Font name="System Bold" size="18.0"/>
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" text="Password:" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="System Bold" size="18.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="nameText" prefHeight="30.0" prefWidth="235.0" promptText="enter user name"
+                                   GridPane.columnIndex="1"/>
+                        <PasswordField fx:id="passwordText" prefHeight="34.0" prefWidth="235.0"
+                                       promptText="enter password" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                    </children>
+                </GridPane>
+                <Button layoutX="455.0" layoutY="203.0" mnemonicParsing="false" onAction="#handleReset"
+                        prefHeight="40.0" prefWidth="75.0" text="Reset">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Button>
+                <Button alignment="CENTER_RIGHT" layoutX="545.0" layoutY="203.0" mnemonicParsing="false"
+                        onAction="#login" prefHeight="41.0" prefWidth="75.0" text="Login">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

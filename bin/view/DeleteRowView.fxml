@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.DeleteProductControl">
+    <children>
+        <TableView fx:id="table" layoutX="4.0" layoutY="4.0" prefHeight="368.0" prefWidth="777.0"
+                   AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0"
+                   AnchorPane.topAnchor="1.0">
+            <columns>
+                <TableColumn fx:id="productID" prefWidth="57.0" text="ID"/>
+                <TableColumn fx:id="productName" prefWidth="146.0" text="Name"/>
+                <TableColumn fx:id="importDate" prefWidth="195.0" text="EntryTime"/>
+                <TableColumn fx:id="quantity" prefWidth="63.0" text="Stock"/>
+                <TableColumn fx:id="supplierID" prefWidth="100.0" text="SupplierID"/>
+                <TableColumn fx:id="checkBox" minWidth="0.0" prefWidth="79.0" text="Option"/>
+                <TableColumn fx:id="btn" minWidth="0.0" prefWidth="84.0" text="Edit"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

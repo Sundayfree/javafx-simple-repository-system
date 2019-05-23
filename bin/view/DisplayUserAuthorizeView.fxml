@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.UserAuthorizeControl">
+    <children>
+        <TableView fx:id="table" prefHeight="381.0" prefWidth="722.0" AnchorPane.bottomAnchor="1.0"
+                   AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+            <columns>
+                <TableColumn fx:id="UserID" prefWidth="191.0" text="ID"/>
+                <TableColumn fx:id="userName" prefWidth="125.0" text="Name"/>
+                <TableColumn fx:id="date" prefWidth="114.0" text="EntryTime"/>
+                <TableColumn fx:id="role" prefWidth="74.0" text="Role"/>
+                <TableColumn fx:id="checkBox" prefWidth="129.0" text="Authorization"/>
+                <TableColumn fx:id="btn" prefWidth="87.0" text="Edit"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

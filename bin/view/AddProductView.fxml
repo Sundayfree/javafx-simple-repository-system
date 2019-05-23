@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0"
+            prefWidth="774.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.AddProductControl">
+    <content>
+        <GridPane prefHeight="390.0" prefWidth="542.0">
+            <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="309.0" minWidth="10.0"
+                                   prefWidth="306.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="398.0" minWidth="0.0" prefWidth="212.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <TextField fx:id="textName" promptText="enter product name" GridPane.columnIndex="1"/>
+                <TextField fx:id="textSum" promptText="enter num" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <TextField fx:id="textCost" promptText="enter cost" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <TextField fx:id="textPrice" promptText="enter retail price" GridPane.columnIndex="1"
+                           GridPane.rowIndex="3"/>
+                <TextField fx:id="textSupplierName" promptText="enter supplier name" GridPane.columnIndex="1"
+                           GridPane.rowIndex="4"/>
+                <TextField fx:id="textPhone" promptText="enter phone number" GridPane.columnIndex="1"
+                           GridPane.rowIndex="5"/>
+                <Label text="Quantity:" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Label>
+                <Label text="Cost:" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Label>
+                <Label text="Retail price:" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Label>
+                <Label text="Supplier Name:" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Label>
+                <Label text="Supplier Phone:" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Label>
+                <Label text="Producrt Name:">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Label>
+                <Button mnemonicParsing="false" onAction="#submitHandler" text="Submit" GridPane.columnIndex="1"
+                        GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#resetHandler" text="Reset" GridPane.columnIndex="1"
+                        GridPane.rowIndex="6">
+                    <GridPane.margin>
+                        <Insets left="60.0"/>
+                    </GridPane.margin>
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Button>
+            </children>
+        </GridPane>
+    </content>
+</ScrollPane>

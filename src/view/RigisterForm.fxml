@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.25732899022801303" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+           minWidth="-Infinity" orientation="VERTICAL" prefHeight="616.0" prefWidth="699.0"
+           xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="controller.RegisterFormControl">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            <children>
+                <Label layoutX="187.0" layoutY="51.0" prefHeight="91.0" prefWidth="344.0" text="Register Form">
+                    <font>
+                        <Font name="MV Boli" size="50.0"/>
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="263.0" prefWidth="641.0">
+            <children>
+                <GridPane layoutX="157.0" layoutY="87.0" prefHeight="153.0" prefWidth="379.0">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="268.0" minWidth="10.0"
+                                           prefWidth="127.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="410.0" minWidth="10.0" prefWidth="241.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="106.0" minHeight="10.0" prefHeight="74.0" vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="174.0" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label text="User Name:">
+                            <font>
+                                <Font name="System Bold" size="18.0"/>
+                            </font>
+                        </Label>
+                        <Label text="Password:" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="System Bold" size="18.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="nameText" prefHeight="39.0" prefWidth="190.0" promptText="enter user name"
+                                   GridPane.columnIndex="1"/>
+                        <PasswordField fx:id="passwordText" prefHeight="40.0" prefWidth="246.0"
+                                       promptText="enter password" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                    </children>
+                </GridPane>
+                <Button layoutX="444.0" layoutY="250.0" mnemonicParsing="false" onAction="#register" text="Submit">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Button>
+                <Button layoutX="525.0" layoutY="361.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="65.0"
+                        prefWidth="144.0" text="BackTo Login">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </items>
+</SplitPane>
